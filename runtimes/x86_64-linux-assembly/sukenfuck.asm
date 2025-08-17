@@ -169,7 +169,7 @@ loop_start:
     dont_enter_loop:
     xor r13, r13
     exit_loop:
-        add r15, 2
+        add r15, 1
         mov ax, [r15]
         cmp ax, "ė"
         je bracket_close
@@ -189,7 +189,7 @@ loop_end:
     jmp loop
 
 next:
-    add r15, 2
+    add r15, 1
     jmp loop
 
 validation_check:
